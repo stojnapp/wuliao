@@ -1,0 +1,120 @@
+.filter_box{
+    width: 100%;
+    height: 47px;
+}
+.filter_box .filter_layer{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 47px;
+    background: #fff;
+    z-index: 9999;
+    font-size: 14px;
+    height: 0px;
+    transition: height 0.2s;
+    visibility:hidden
+}
+.filter_box .filter_layer ul{
+    display: block;
+}
+.filter_box .filter_layer ul li{
+    line-height: 45px;
+}
+.filter_box .filter_layer ul li.active{
+    color: #1DCBAC;
+}
+.filter_box .filter_layer_active{
+    height: auto;
+    visibility:visible
+}
+.filter_box ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+.filter_box ul li{
+    flex: 1;
+    height: 100%;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 16px;
+}
+.filter_box ul li.active{
+    color: #1DCBAC;
+}
+.filter_box ul li img{
+    margin-left: 5px;
+    max-width: 8px;
+}
+
+.list_dl{
+    display: block;
+    margin-top: 10px;
+    background: #fff
+}
+.list_dl dt{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    padding: 0px 16px;
+}
+.list_dl dt img{
+    max-width: 20px;
+    margin: 0 auto
+}
+.list_dl dt cite{
+    flex: 1;
+    font-size: 16px;
+    text-align: center;
+}
+.list_dl dt cite:first-child{
+    position: relative;
+}
+.list_dl dt cite:first-child::after{
+    position: absolute;
+    content: "";
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 1px;
+    background: #D8D8D8;
+}
+.list_dl dt cite.hiddenafter::after{
+    display: none
+}
+.list_dl dd{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px 16px;
+    padding-top: 15px;
+}
+.list_dl dd span{
+    font-size: 14px;
+    color: #999;
+}
+.list_dl dd span cite{
+    background: #F7F7F7;
+    padding: 2px 4px;
+    border-radius: 2px;
+    color: #999;
+    font-size: 12px;
+    margin-left: 6px;
+}
+.list_dl dd p,.list_dl dd div{
+    flex: 1;
+    font-size: 14px;
+    color: #333;
+    text-align: right;
+}
